@@ -2,109 +2,99 @@
 "We Help You Buy Any Products Items From China🇨🇳🇲🇾"
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SS DYNAMIC SENSEI BORONG CHINA</title>
-
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SS DYNAMIC SENSEI BORONG CHINA</title><style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 }
 
 body{
-background:#0d0d0d;
+background:#0f0f0f;
 color:white;
+line-height:1.6;
 }
 
 header{
-background:linear-gradient(90deg,#c00000,#000000);
+background:linear-gradient(90deg,#c40000,#000000);
 padding:20px;
 text-align:center;
 }
 
 header h1{
-font-size:40px;
-color:#fff;
+font-size:42px;
+color:#FFD700;
 }
 
 header p{
-margin-top:10px;
 font-size:18px;
 }
 
 .hero{
-height:500px;
-background:url('china-malaysia.jpg') center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
+padding:80px 20px;
 text-align:center;
-padding:20px;
-}
-
-.hero-content{
-background:rgba(0,0,0,0.7);
-padding:30px;
-border-radius:10px;
+background:url('china-malaysia-bg.jpg');
+background-size:cover;
+background-position:center;
 }
 
 .hero h2{
-font-size:40px;
-color:#ff0000;
+font-size:38px;
+color:#FFD700;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+margin-top:15px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 25px;
-background:red;
+padding:15px 30px;
+background:#c40000;
 color:white;
 text-decoration:none;
-margin-top:15px;
-border-radius:5px;
+border-radius:8px;
+margin-top:20px;
 }
 
 section{
 padding:50px 20px;
-}
-
-.container{
 max-width:1200px;
 margin:auto;
 }
 
 .card{
-background:#151515;
-padding:20px;
-border-radius:10px;
-margin-bottom:20px;
+background:#1b1b1b;
+padding:25px;
+border-radius:12px;
+margin-bottom:25px;
+border:1px solid #333;
 }
 
 h2{
-color:#ff0000;
 margin-bottom:20px;
+color:#FFD700;
 }
 
-input,
-textarea,
-select{
+input,select,textarea{
 width:100%;
 padding:12px;
 margin:10px 0;
 border:none;
-border-radius:5px;
+border-radius:6px;
 }
 
 button{
-padding:12px 25px;
-background:red;
+background:#c40000;
 color:white;
+padding:12px 30px;
 border:none;
+border-radius:8px;
 cursor:pointer;
-border-radius:5px;
 }
 
 table{
@@ -112,415 +102,80 @@ width:100%;
 border-collapse:collapse;
 }
 
-table th,
-table td{
+table th,table td{
 border:1px solid #333;
-padding:10px;
+padding:12px;
 text-align:center;
 }
 
 footer{
-background:#111;
+background:#000;
 padding:30px;
 text-align:center;
 }
 
-</style>
-</head>
-
-<body>
-
-<header>
-
-<h1>SS DYNAMIC SENSEI BORONG CHINA</h1>
-
-<p>
-Help You Buy Goods From China 🇨🇳 To Malaysia 🇲🇾
-</p>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h2>
+</style></head><body><header><h1>SS DYNAMIC SENSEI BORONG CHINA</h1><p>
 Hai! Ada Soalan Tentang Beli Dan Borong Dari China?
-</h2>
-
-<p>
-We Help Manage The Purchase And Delivery Of Your Products
-Items From China To Malaysia
-</p>
-
-<a href="#request" class="btn">
-Request Product
-</a>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>Product Search Request</h2>
-
-<div class="card">
-
-<form>
-
-<input type="text"
-placeholder="Product Name">
-
-<input type="url"
-placeholder="Product Link">
-
-<input type="number"
-placeholder="Weight (KG)">
-
-<input type="number"
-placeholder="Length (CM)">
-
-<input type="number"
-placeholder="Width (CM)">
-
-<input type="number"
-placeholder="Height (CM)">
-
-<textarea
-placeholder="Product Details">
-</textarea>
-
-<button>
-Submit Request
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>RMB ↔ MYR Converter</h2>
-
-<div class="card">
-
-<input type="number"
-placeholder="RMB Amount">
-
-<button>
-Convert To MYR
-</button>
-
-<p>
-Live Exchange Rate Ready For API Integration
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>Shipping Cost Calculator</h2>
-
-<div class="card">
-
-<input type="number"
-placeholder="Weight (KG)">
-
-<input type="number"
-placeholder="CBM">
-
-<button>
-Calculate Shipping
-</button>
-
-<p>
-Air Freight & Sea Freight Cost Estimation
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>Auto Quotation Form</h2>
-
-<div class="card">
-
-<form>
-
-<input type="text"
-placeholder="Customer Name">
-
-<input type="text"
-placeholder="WhatsApp Number">
-
-<input type="email"
-placeholder="Email">
-
-<textarea
-placeholder="Product Request">
-</textarea>
-
-<button>
-Generate Quotation
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>Supplier Verification System</h2>
-
-<div class="card">
-
-<p>
-
-✓ Verify 1688 Supplier
-
-✓ Verify Taobao Supplier
-
-✓ Verify Pinduoduo Supplier
-
-✓ Verify Alibaba Supplier
-
-✓ Factory Verification
-
-✓ Scam Risk Assessment
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>AI Product Sourcing Assistant</h2>
-
-<div class="card">
-
-<p>
-
-Ask AI To Search Product
-
-Find Factory
-
-Estimate Pricing
-
-MOQ Analysis
-
-Shipping Recommendation
-
-Ready For AI API Integration
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>Cargo Tracking Portal</h2>
-
-<div class="card">
-
-<input type="text"
-placeholder="Tracking Number">
-
-<button>
-Track Shipment
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>China Warehouse Management</h2>
-
-<div class="card">
-
-<p>
-
-Warehouse Guangzhou
-
-Warehouse Shenzhen
-
-Warehouse Yiwu
-
-Parcel Consolidation
-
-Inventory Monitoring
-
-Ready For WMS Integration
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>Customer Dashboard</h2>
-
-<div class="card">
-
-<p>
-
-Order History
-
-Quotation History
-
-Shipment Tracking
-
-Invoice Download
-
-Ready For Login System
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>Multi Language</h2>
-
-<div class="card">
-
-<select>
-
-<option>Bahasa Malaysia</option>
-
-<option>English</option>
-
-<option>中文 Chinese</option>
-
-</select>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>Supported Platforms</h2>
-
-<table>
-
-<tr>
-<th>Platform</th>
-<th>Supported</th>
-</tr>
-
-<tr>
-<td>1688</td>
-<td>✔</td>
-</tr>
-
-<tr>
-<td>Taobao</td>
-<td>✔</td>
-</tr>
-
-<tr>
-<td>Pinduoduo</td>
-<td>✔</td>
-</tr>
-
-<tr>
-<td>JD.com</td>
-<td>✔</td>
-</tr>
-
-<tr>
-<td>Tmall</td>
-<td>✔</td>
-</tr>
-
-<tr>
-<td>Xianyu</td>
-<td>✔</td>
-</tr>
-
-</table>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>SS DYNAMIC SENSEI BORONG CHINA</h3>
-
-<p>
+</p><p>
+WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS ITEMS FROM 🇨🇳 CHINA TO 🇲🇾 MALAYSIA
+</p></header><section class="hero"><h2>
 #SSDynamicSenseiBorongChina
-</p>
-
-<p>
-Help You Buy Goods From China 🇨🇳 To Malaysia 🇲🇾
-</p>
-
-<p>
-WhatsApp: +601151453147
-</p>
-
-</footer>
-
-</body>
+</h2><p>
+Professional China Purchasing Agent, Product Sourcing, Supplier Verification,
+Cargo Consolidation and Logistics Forwarder Services.
+</p><a href="#request" class="btn">
+REQUEST PRODUCT NOW
+</a></section><section><h2>Product Request Form</h2><div class="card"><form><input type="text" placeholder="Customer Name"><input type="text" placeholder="WhatsApp Number"><input type="email" placeholder="Email"><textarea placeholder="Product Name or Product Link"></textarea><input type="number" placeholder="Weight (KG)"><input type="number" placeholder="Length (CM)"><input type="number" placeholder="Width (CM)"><input type="number" placeholder="Height (CM)"><button>
+Submit Request
+</button></form></div></section><section><h2>Product Search Engine</h2><div class="card"><input type="text" placeholder="Search Product Keywords"><button>
+Search Product
+</button><p>
+Ready for Taobao / 1688 / Pinduoduo API Integration
+</p></div></section><section><h2>RMB ↔ MYR Converter</h2><div class="card"><input type="number" placeholder="Enter RMB"><button>
+Convert
+</button><p>
+Ready for Live Currency API
+</p></div></section><section><h2>Shipping Cost Calculator</h2><div class="card"><input type="number" placeholder="Weight (KG)"><input type="number" placeholder="CBM"><button>
+Calculate Shipping Cost
+</button></div></section><section><h2>Supplier Verification System</h2><div class="card"><input type="text" placeholder="Supplier Company Name"><button>
+Verify Supplier
+</button><p>
+Ready for China Business Verification API
+</p></div></section><section><h2>Auto Quotation Generator</h2><div class="card"><table><tr>
+<th>Item</th>
+<th>Price RMB</th>
+<th>Quantity</th>
+<th>Total RMB</th>
+</tr><tr>
+<td>Sample Product</td>
+<td>50</td>
+<td>10</td>
+<td>500</td>
+</tr></table></div></section><section><h2>Customer Dashboard</h2><div class="card"><p>
+Order History
+</p><p>
+Quotation History
+</p><p>
+Shipment Tracking
+</p><p>
+Warehouse Inventory
+</p></div></section><section><h2>AI Product Sourcing Assistant</h2><div class="card"><textarea placeholder="Describe product you want to source from China"></textarea><button>
+Ask AI Assistant
+</button><p>
+Ready for OpenAI Integration
+</p></div></section><section><h2>Cargo Tracking Portal</h2><div class="card"><input type="text" placeholder="Tracking Number"><button>
+Track Shipment
+</button><p>
+Ready for Tracking API Integration
+</p></div></section><section><h2>China Warehouse Portal</h2><div class="card"><p>Guangzhou Warehouse</p>
+<p>Shenzhen Warehouse</p>
+<p>Yiwu Warehouse</p></div></section><section><h2>Language Selection</h2><div class="card"><select><option>Bahasa Malaysia</option><option>English</option><option>中文 Chinese</option></select></div></section><section id="request"><h2>WhatsApp Submission</h2><div class="card"><p>
+WhatsApp Number:
++601151453147
+</p><a href="https://wa.me/601151453147" class="btn">
+CONTACT WHATSAPP
+</a></div></section><footer><h3>SS DYNAMIC SENSEI BORONG CHINA</h3><p>
+Professional Purchasing Agent & Logistics Solutions
+China 🇨🇳 to Malaysia 🇲🇾
+</p></footer></body>
+</html>
