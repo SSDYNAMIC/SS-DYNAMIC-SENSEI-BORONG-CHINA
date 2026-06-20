@@ -2,60 +2,54 @@
 "We Help You Buy Any Products Items From China🇨🇳🇲🇾"
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SS DYNAMIC SENSEI BORONG CHINA</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
-background:#0d0d0d;
-color:white;
+background:#0a0a0a;
+color:#fff;
 }
 
 header{
-background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2');
-background-size:cover;
-background-position:center;
-padding:100px 20px;
+background:linear-gradient(135deg,#8B0000,#ff0000,#111);
+padding:80px 20px;
 text-align:center;
 }
 
 header h1{
-font-size:55px;
-color:#ff0000;
+font-size:50px;
 }
 
-header h2{
+header p{
 margin-top:15px;
-color:#ffffff;
+font-size:18px;
 }
 
 .container{
 max-width:1200px;
 margin:auto;
-padding:50px 20px;
+padding:40px 20px;
 }
 
 .card{
-background:#151515;
+background:#111;
 padding:25px;
-border-radius:15px;
 margin-bottom:25px;
+border-radius:15px;
 border:1px solid #333;
 }
 
-.card h2{
+h2{
 color:#ff4444;
-margin-bottom:15px;
+margin-bottom:20px;
 }
 
 input,textarea{
@@ -69,14 +63,14 @@ color:white;
 }
 
 button{
+width:100%;
+padding:15px;
 background:#ff0000;
 color:white;
 border:none;
-padding:15px;
-width:100%;
 border-radius:8px;
+font-size:18px;
 cursor:pointer;
-font-weight:bold;
 }
 
 button:hover{
@@ -84,9 +78,9 @@ background:#cc0000;
 }
 
 .result{
-margin-top:15px;
-padding:10px;
-background:#222;
+background:#1a1a1a;
+padding:15px;
+margin-top:10px;
 border-radius:8px;
 }
 
@@ -101,26 +95,18 @@ color:white;
 text-decoration:none;
 font-weight:bold;
 }
-
-footer{
-background:#111;
-padding:30px;
-text-align:center;
-}
-
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
-
 <h1>SS DYNAMIC SENSEI BORONG CHINA</h1>
 
-<h2>
-WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS
+<p>
+WE HELP MANAGE THE PURCHASE AND DELIVERY OF YOUR PRODUCTS ITEMS
 FROM 🇨🇳 CHINA TO 🇲🇾 MALAYSIA
-</h2>
+</p>
 
 </header>
 
@@ -128,221 +114,204 @@ FROM 🇨🇳 CHINA TO 🇲🇾 MALAYSIA
 
 <div class="card">
 
-<h2>PRODUCT REQUEST FORM</h2>
+<h2>Product Request Form</h2>
 
 <input type="text" id="name" placeholder="Customer Name">
+
 <input type="text" id="phone" placeholder="WhatsApp Number">
+
 <input type="email" id="email" placeholder="Email">
-<input type="text" id="product" placeholder="Product Name / Product Link">
-<input type="number" id="weight" placeholder="Weight (KG)">
-<input type="number" id="length" placeholder="Length (CM)">
-<input type="number" id="width" placeholder="Width (CM)">
-<input type="number" id="height" placeholder="Height (CM)">
 
-<button onclick="sendWA()">
-SUBMIT TO WHATSAPP
+<input type="text" id="product"
+placeholder="Product Name or Product Link">
+
+<input type="number" id="weight"
+placeholder="Weight (KG)">
+
+<input type="number" id="length"
+placeholder="Length (CM)">
+
+<input type="number" id="width"
+placeholder="Width (CM)">
+
+<input type="number" id="height"
+placeholder="Height (CM)">
+
+<button onclick="sendWhatsApp()">
+SEND TO WHATSAPP
 </button>
 
 </div>
 
 <div class="card">
 
-<h2>PRODUCT SEARCH ENGINE</h2>
+<h2>Product Search Engine</h2>
 
-<input type="text" id="productLink"
-placeholder="Paste Product Link Here">
+<input type="text"
+placeholder="Paste Taobao / 1688 / Pinduoduo / JD Link">
 
-<button onclick="window.open(document.getElementById('productLink').value)">
-OPEN PRODUCT LINK
-</button>
+<div class="result">
+Copy & Paste Product Link Here
+</div>
 
 </div>
 
 <div class="card">
 
-<h2>RMB ↔ MYR CONVERTER</h2>
+<h2>RMB ↔ MYR Converter</h2>
 
 <input type="number" id="rmb"
 placeholder="RMB">
 
 <button onclick="convertRMB()">
-CONVERT TO MYR
+Convert RMB To MYR
 </button>
 
-<div class="result" id="rmbResult"></div>
+<div id="rmbResult" class="result"></div>
+
+<p>
+XE.com | Wise.com | WesternUnion.com
+</p>
 
 </div>
 
 <div class="card">
 
-<h2>CBM CALCULATOR</h2>
+<h2>Volumetric Calculator</h2>
 
-<input type="number" id="l"
+<input type="number" id="vlength"
 placeholder="Length CM">
 
-<input type="number" id="w"
+<input type="number" id="vwidth"
 placeholder="Width CM">
 
-<input type="number" id="h"
+<input type="number" id="vheight"
+placeholder="Height CM">
+
+<button onclick="calculateVolumetric()">
+Calculate Volumetric Weight
+</button>
+
+<div id="volResult" class="result"></div>
+
+</div>
+
+<div class="card">
+
+<h2>CBM Calculator</h2>
+
+<input type="number" id="clength"
+placeholder="Length CM">
+
+<input type="number" id="cwidth"
+placeholder="Width CM">
+
+<input type="number" id="cheight"
 placeholder="Height CM">
 
 <button onclick="calculateCBM()">
-CALCULATE CBM
+Calculate CBM
 </button>
 
-<div class="result" id="cbmResult"></div>
+<div id="cbmResult" class="result"></div>
 
 </div>
 
 <div class="card">
 
-<h2>VOLUMETRIC WEIGHT</h2>
+<h2>Shipping Cost Estimator</h2>
 
-<input type="number" id="vl"
-placeholder="Length CM">
-
-<input type="number" id="vw"
-placeholder="Width CM">
-
-<input type="number" id="vh"
-placeholder="Height CM">
-
-<button onclick="calculateVol()">
-CALCULATE VOLUMETRIC
-</button>
-
-<div class="result" id="volResult"></div>
-
-</div>
-
-<div class="card">
-
-<h2>AIR SHIPPING COST</h2>
-
-<input type="number" id="airkg"
+<input type="number" id="shipkg"
 placeholder="Weight KG">
 
-<input type="number" id="airrate"
-placeholder="Rate Per KG">
-
-<button onclick="airCost()">
-CALCULATE
+<button onclick="estimateShipping()">
+Estimate Shipping
 </button>
 
-<div class="result" id="airResult"></div>
-
-</div>
-
-<div class="card">
-
-<h2>SEA SHIPPING COST</h2>
-
-<input type="number" id="cbm"
-placeholder="CBM">
-
-<input type="number" id="cbmrate"
-placeholder="Rate Per CBM">
-
-<button onclick="seaCost()">
-CALCULATE
-</button>
-
-<div class="result" id="seaResult"></div>
+<div id="shipResult" class="result"></div>
 
 </div>
 
 </div>
 
-<footer>
-
-<h3>SS DYNAMIC SENSEI BORONG CHINA</h3>
-
-<p>
-Taobao • 1688 • Pinduoduo • JD • Tmall • Xianyu
-</p>
-
-</footer>
-
-<a href="https://wa.me/601151453147"
-class="whatsapp">
-WhatsApp Now
+<a class="whatsapp"
+href="https://wa.me/601151453147"
+target="_blank">
+WhatsApp
 </a>
 
 <script>
 
-function sendWA(){
+function sendWhatsApp(){
 
-let msg=
+let msg =
 "*SS DYNAMIC SENSEI BORONG CHINA*%0A%0A"+
 "Name: "+name.value+"%0A"+
-"Phone: "+phone.value+"%0A"+
+"WhatsApp: "+phone.value+"%0A"+
 "Email: "+email.value+"%0A"+
 "Product: "+product.value+"%0A"+
 "Weight: "+weight.value+" KG";
 
 window.open(
-"https://wa.me/601151453147?text="+msg
+"https://wa.me/601151453147?text="+msg,
+"_blank"
 );
 
 }
 
 function convertRMB(){
 
-let rmb=parseFloat(document.getElementById("rmb").value);
+let rmb=parseFloat(
+document.getElementById('rmb').value);
 
 let rate=0.66;
 
-let myr=rmb/rate;
+let myr=rmb*rate;
 
-document.getElementById("rmbResult")
-.innerHTML="MYR : RM "+myr.toFixed(2);
+document.getElementById('rmbResult')
+.innerHTML=
+rmb+" RMB = RM "+myr.toFixed(2);
+
+}
+
+function calculateVolumetric(){
+
+let l=parseFloat(vlength.value);
+let w=parseFloat(vwidth.value);
+let h=parseFloat(vheight.value);
+
+let result=(l*w*h)/6000;
+
+volResult.innerHTML=
+"Volumetric Weight: "+
+result.toFixed(2)+" KG";
 
 }
 
 function calculateCBM(){
 
-let l=document.getElementById("l").value;
-let w=document.getElementById("w").value;
-let h=document.getElementById("h").value;
+let l=parseFloat(clength.value);
+let w=parseFloat(cwidth.value);
+let h=parseFloat(cheight.value);
 
 let cbm=(l*w*h)/1000000;
 
-document.getElementById("cbmResult")
-.innerHTML="CBM = "+cbm.toFixed(4);
+cbmResult.innerHTML=
+"CBM = "+cbm.toFixed(4);
 
 }
 
-function calculateVol(){
+function estimateShipping(){
 
-let l=document.getElementById("vl").value;
-let w=document.getElementById("vw").value;
-let h=document.getElementById("vh").value;
+let kg=parseFloat(shipkg.value);
 
-let vol=(l*w*h)/6000;
+let air=kg*18;
+let sea=kg*8;
 
-document.getElementById("volResult")
-.innerHTML="Volumetric Weight = "
-+vol.toFixed(2)+" KG";
-
-}
-
-function airCost(){
-
-let kg=document.getElementById("airkg").value;
-let rate=document.getElementById("airrate").value;
-
-document.getElementById("airResult")
-.innerHTML="RM "+(kg*rate).toFixed(2);
-
-}
-
-function seaCost(){
-
-let cbm=document.getElementById("cbm").value;
-let rate=document.getElementById("cbmrate").value;
-
-document.getElementById("seaResult")
-.innerHTML="RM "+(cbm*rate).toFixed(2);
+shipResult.innerHTML=
+"Air Freight: RM "+air.toFixed(2)+
+"<br>Sea Freight: RM "+
+sea.toFixed(2);
 
 }
 
