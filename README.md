@@ -148,7 +148,7 @@ SEND TO WHATSAPP
 <h2>Product Search Engine</h2>
 
 <input type="text"
-placeholder="Paste Taobao / 1688 / Pinduoduo / JD Link">
+placeholder="Paste Taobao / 1688 / Pinduoduo / Tianmao / Jingdong / Xianyu Link">
 
 <div class="result">
 Copy & Paste Product Link Here
@@ -264,7 +264,7 @@ function convertRMB(){
 let rmb=parseFloat(
 document.getElementById('rmb').value);
 
-let rate=0.66;
+let rate=0.65;
 
 let myr=rmb*rate;
 
